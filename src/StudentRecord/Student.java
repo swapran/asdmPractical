@@ -1,0 +1,35 @@
+package StudentRecord;
+
+public class Student {
+	//fields
+	private int rollNo;
+	private String name;
+	private SubjectMarks sub;
+	
+	//constructors
+	public Student() {}
+	public Student(int rollNo, String name) {
+		this.rollNo = rollNo;
+		this.name = name;
+		this.sub = null;
+	}
+	
+	//getters and setters
+	public int getRollNo() {return rollNo;}
+	public void setRollNo(int rollNo) {this.rollNo = rollNo;}
+	
+	public String getName() {return name;}
+	public void setName(String name) {this.name = name;}
+	
+	public SubjectMarks getSub() {return sub;}
+	public void setSub(SubjectMarks sub) {this.sub = sub;}
+
+	//method
+	@Override
+	public String toString() {
+		return "StudentInfo [rollNo=" + rollNo + ", name=" + name + "sub=" + sub + "]";
+	}
+	
+	
+
+}
